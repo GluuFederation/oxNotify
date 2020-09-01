@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  * @author Yuriy Movchan
  * @version September 15, 2017
  */
-@JsonPropertyOrder({ "version", "issuer", "notifyEndpoint" })
+@JsonPropertyOrder({ "version", "issuer", "notify_endpoint" })
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NotifyMetadata {
 
@@ -26,7 +26,7 @@ public class NotifyMetadata {
 	@JsonProperty(value = "issuer")
 	private String issuer;
 
-	@JsonProperty(value = "notifyEndpoint")
+	@JsonProperty(value = "notify_endpoint")
 	private String notifyEndpoint;
 
 	public String getVersion() {
